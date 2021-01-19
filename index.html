@@ -1,0 +1,66 @@
+<body onscroll="switchImages()">
+  <p>SAYYID SUPPAGH IS A GRAPHIC & PRODUCT DESIGNER BASED IN EGYPT.
+    </p> 
+    <p>SERVICES. GRAPHIC DESIGN. PRODUCT DESIGN. BLAH BLAH BLAH... 
+    </p> 
+    <p>EXPERIENCE. HUAWEI. KIA. LAFARGE HOLCIM. JUHAYNA. CBC. MAGRABI HOSPITALS & CENTERS. ARAB SWISS ENGINEERING COMPANY. DAILY NEWS EGYPT. MISR UNIVERSITY FOR SCEINCE & TECHNOLOGY. ERF. AND OTHERS.
+    </p> 
+    <p>FEATURED PROJECTS. INSTAGRAM.
+    </p> 
+  <img id="myImg" src="img/01.png" alt="Italian Trulli">
+</body>
+
+
+<style>
+  body {
+  background-color: #191919; 
+  padding-top: 5vh;  
+  padding-bottom: 5vh;     
+}
+
+p {
+  color:#F5F5F5;
+  font-family: FONTSFONT;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(1.3rem + 3.6vw);
+  text-align: center;
+  max-width: 1800px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+img { 
+  max-width:80%;
+  max-height:70%;
+  position:fixed;
+  top:0; left:0; right:0; bottom:0;
+  margin:auto;
+  z-index:-1;
+} 
+
+</style>
+
+<script>
+  function switchImages() {
+
+var srcs = [
+  
+  "img/02.png",
+  "img/03.png",
+  "img/04.png",
+  "img/05.png",
+  "img/06.png",
+  "img/07.png",
+  "img/08.png",
+  "img/09.png",
+  "img/10.png"
+]
+
+var randomSrc = srcs[Math.floor(Math.random()*srcs.length)];
+
+document.getElementById("myImg").src = randomSrc;
+ }
+
+
+</script>
